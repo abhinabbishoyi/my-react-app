@@ -1,18 +1,18 @@
 //import { logRoles } from '@testing-library/dom';
-import About from './About';
+// import About from './About';
 import './App.css';
 import Navbar from './Navbar';
 import Textform from './Textform';
 
 import {useState} from 'react';
 import Alert from './Alert';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Routes,
-    Link
-  } from "react-router-dom";
+// import {
+//     BrowserRouter as Router,
+//     Switch,
+//     Route,
+//     Routes,
+//     Link
+//   } from "react-router-dom";
   
 
 
@@ -60,23 +60,22 @@ function App() {
 
     return (
         <>
-        <Router>
+        {/* <Router> */}
         <Navbar title="TextUtils" aboutProps="About Us" mode ={mode}  toggleMode={toggleMode}/>
 
         <Alert alert={alert}/>
 
-        <Routes>
+        {/* <Routes>
           <Route path="/about" element={<About />}>
             {/* <About /> */}
-          </Route>
-
-          <Route path="/"  element={<Textform label="Enter text to analyse"  mode ={mode}/> 
-}>
+          {/* </Route> */}
+{/*  */}
           
+{/*           
           </Route>
         </Routes>
-        </Router>
-        
+        </Router> */}
+      <Textform label="Enter text to analyse"  mode ={mode}/>  
         {/* can send in Textform as well like showAlert={showAlert} and use in all utility func */}
         {/* <About /> */}
         </>
